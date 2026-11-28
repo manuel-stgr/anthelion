@@ -2,53 +2,35 @@ name: Update Packages
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
 
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
 
-permissions: {}
+permissions:
+  contents: write
 
 jobs:
   update-packages:
     name: Update Packages
-    runs-on: ubuntu-26.04-arm
-    environment:
-      name: Production
-      deployment: false
+    runs-on: ubuntu-latest
     timeout-minutes: 20
-    permissions:
-      id-token: write # Required to authenticate to Infisical with GitHub OIDC.
-    env:
-      INFISICAL_IDENTITY_ID: ${{ vars.INFISICAL_IDENTITY_ID }}
-      INFISICAL_PROJECT_ID: ${{ vars.INFISICAL_PROJECT_ID }}
-      INFISICAL_ENVIRONMENT: ${{ vars.INFISICAL_ENVIRONMENT }}
-      INFISICAL_DOMAIN: ${{ vars.INFISICAL_DOMAIN }}
     steps:
       - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v4
 
       - name: Setup Environment
-        uses: jdx/mise-action@90f833d396d0cc3674b631d2d225e306476c303a # v5.2.10
+        uses: jdx/mise-action@v2
         with:
-          version: 2026.11.11
-          install_args: bun codex infisical
+          install_args: bun
 
-      - parallel:
-          - name: Install Dependencies
-            run: bun ci --production
-
-          - name: Restore Credentials
-            id: credentials
-            run: bash .github/scripts/infisical.sh restore
+      - name: Install Dependencies
+        run: bun ci --production
 
       - name: Update Packages
         run: bun start
         env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           KOMAC_FORK_OWNER: ${{ github.repository_owner }}
-
-      - name: Save Refreshed Credentials
-        if: always() && steps.credentials.outcome == 'success'
-        run: bash .github/scripts/infisical.sh save
