@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "anchore", "repo": "grype" },
-	"urls": [
-		"https://github.com/anchore/grype/releases/download/v{version}/grype_{version}_windows_amd64.zip"
-	]
-}

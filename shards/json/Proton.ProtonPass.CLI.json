@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "json",
-	"json": {
-		"url": "https://proton.me/download/pass-cli/versions.json",
-		"path": "passCliVersions.version"
-	},
-	"urls": ["passCliVersions.urls.windows.x86_64.url"]
-}

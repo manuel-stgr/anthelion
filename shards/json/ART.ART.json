@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "artraweditor", "repo": "ART" },
-	"urls": [
-		"https://github.com/artraweditor/ART/releases/download/{version}/ART_{version}_Win64.exe",
-		"https://github.com/artraweditor/ART/releases/download/{version}/ART_{version}_Windows_arm64.exe"
-	]
-}

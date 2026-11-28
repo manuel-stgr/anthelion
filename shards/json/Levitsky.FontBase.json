@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": { "url": "https://releases.fontba.se/win/latest.yml" },
-	"urls": [
-		{ "url": "https://releases.fontba.se/win/FontBase-{version}.exe", "architecture": "x64" }
-	]
-}

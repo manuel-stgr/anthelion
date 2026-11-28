@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "sort-versions",
-	"sortVersions": {
-		"url": "https://learn.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes?accept=text/markdown",
-		"regex": "\\[Windows\\]\\(https://gbl\\.his\\.arc\\.azure\\.com/azcmagent/(\\d+(?:\\.\\d+)+)/AzureConnectedMachineAgent\\.msi\\)"
-	},
-	"urls": ["https://gbl.his.arc.azure.com/azcmagent/{version}/arcsetup.exe"]
-}

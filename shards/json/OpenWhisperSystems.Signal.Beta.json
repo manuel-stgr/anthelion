@@ -1,6 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": { "url": "https://updates.signal.org/desktop/beta.yml" },
-	"urls": ["https://updates.signal.org/desktop/signal-desktop-beta-win-{version}.exe"]
-}

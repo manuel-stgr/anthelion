@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": {
-		"url": "https://basecamp.com/desktop/latest.yml"
-	},
-	"ignoreOtherPrs": true
-}

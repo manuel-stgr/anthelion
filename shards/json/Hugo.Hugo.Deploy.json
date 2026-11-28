@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "gohugoio", "repo": "hugo" },
-	"urls": [
-		"https://github.com/gohugoio/hugo/releases/download/v{version}/hugo_withdeploy_{version}_windows-amd64.zip"
-	]
-}

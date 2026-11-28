@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "tryandromeda", "repo": "andromeda" },
-	"urls": [
-		"https://github.com/tryandromeda/andromeda/releases/download/{version}/andromeda-windows-amd64.exe",
-		"https://github.com/tryandromeda/andromeda/releases/download/{version}/andromeda-windows-arm64.exe"
-	]
-}

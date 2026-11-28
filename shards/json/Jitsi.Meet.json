@@ -1,7 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": {
-		"url": "https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/latest.yml"
-	}
-}

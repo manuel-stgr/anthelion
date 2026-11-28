@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "bazelbuild", "repo": "bazelisk" },
-	"urls": [
-		"https://github.com/bazelbuild/bazelisk/releases/download/v{version}/bazelisk-windows-amd64.exe",
-		"https://github.com/bazelbuild/bazelisk/releases/download/v{version}/bazelisk-windows-arm64.exe"
-	]
-}

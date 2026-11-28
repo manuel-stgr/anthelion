@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "json",
-	"json": {
-		"url": "https://streamer.bot/api/releases/streamer.bot",
-		"path": "stable.version"
-	},
-	"urls": ["stable.url"]
-}

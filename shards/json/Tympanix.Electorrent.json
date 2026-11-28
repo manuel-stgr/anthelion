@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "json",
-	"json": {
-		"url": "https://electorrent.vercel.app/update/exe/0.0.0",
-		"path": "name"
-	},
-	"urls": ["url"]
-}

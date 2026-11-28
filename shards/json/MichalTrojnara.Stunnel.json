@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
-		"url": "https://www.stunnel.org/downloads.html",
-		"regex": "href=.*?stunnel[._-]v?(\\d+(?:\\.\\d+)+)\\.t"
-	},
-	"urls": ["https://www.stunnel.org/downloads/stunnel-{version}-win64-installer.exe"]
-}

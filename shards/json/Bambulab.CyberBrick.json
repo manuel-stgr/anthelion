@@ -1,7 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "electron-builder",
-	"electronBuilder": {
-		"url": "https://public-cdn.bblmw.com/upgrade/cyber-brick/updates/Release_win32_x64/latest.yml"
-	}
-}

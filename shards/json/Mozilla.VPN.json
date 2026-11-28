@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "redirect-match",
-	"redirectMatch": {
-		"url": ["https://vpn.mozilla.org/r/vpn/download/windows"],
-		"regex": "archive.mozilla.org/pub/vpn/releases/(\\d+(?:\\.\\d+)+)/windows/MozillaVPN.msi"
-	}
-}

@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "coreos", "repo": "butane" },
-	"urls": [
-		"https://github.com/coreos/butane/releases/download/v{version}/butane-x86_64-pc-windows-gnu.exe"
-	]
-}

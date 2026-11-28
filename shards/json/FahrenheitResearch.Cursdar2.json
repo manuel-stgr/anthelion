@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "FahrenheitResearch", "repo": "cursdar2" },
-	"urls": [
-		"https://github.com/FahrenheitResearch/cursdar2/releases/download/v{version}/cursdar2-v{version}-windows-x64.zip"
-	]
-}

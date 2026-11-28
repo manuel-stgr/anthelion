@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "page-match",
-	"pageMatch": {
-		"url": "https://www.gethomebank.org/en/downloads.php",
-		"regex": "href=\"[^\"]*HomeBank[._-](\\d+(?:\\.\\d+)+)[._-]setup\\.exe\""
-	},
-	"urls": ["https://www.gethomebank.org/public/binaries/HomeBank-{version}-setup.exe"]
-}

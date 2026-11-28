@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "redirect-match",
-	"redirectMatch": {
-		"url": ["https://benchmarks.ul.com/downloads/systeminfo/latest"],
-		"regex": "Futuremark_SystemInfo_(?<major>\\d+)_(?<minor>\\d+)_(?<build>\\d+)\\.msi"
-	},
-	"version": "{captures.major}.{captures.minor}.{captures.build}.0"
-}

@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "sort-versions",
-	"sortVersions": {
-		"url": "https://download.bzflag.org/bzflag/windows/",
-		"regex": "href=[\"']?v?(\\d+(?:\\.\\d+)+)\\/?[\"' >]"
-	},
-	"urls": ["https://download.bzflag.org/bzflag/windows/{version}/bzflag-{version}.exe"]
-}

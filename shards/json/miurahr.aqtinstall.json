@@ -1,9 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "miurahr", "repo": "aqtinstall" },
-	"urls": [
-		"https://github.com/miurahr/aqtinstall/releases/download/v{version}/aqt_x86.exe",
-		"https://github.com/miurahr/aqtinstall/releases/download/v{version}/aqt_x64.exe"
-	]
-}

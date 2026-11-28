@@ -1,7 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "erlang", "repo": "otp" },
-	"urls": ["https://github.com/erlang/otp/releases/download/OTP-{version}/otp_win64_{version}.exe"],
-	"versionRemove": "OTP-"
-}

@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "go-shiori", "repo": "shiori" },
-	"urls": [
-		"https://github.com/go-shiori/shiori/releases/download/v{version}/shiori_Windows_x86_64_{version}.zip"
-	]
-}

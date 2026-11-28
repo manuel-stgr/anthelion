@@ -1,8 +1,0 @@
-{
-	"$schema": "https://anthelion.unownplain.dev/schema.json",
-	"strategy": "github-release",
-	"github": { "owner": "alacritty", "repo": "alacritty" },
-	"urls": [
-		"https://github.com/alacritty/alacritty/releases/download/v{version}/Alacritty-v{version}-installer.msi"
-	]
-}
